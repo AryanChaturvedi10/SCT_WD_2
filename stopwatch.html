@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Stopwatch - Precision Timer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="header-icon">⏱</div>
+            <div>
+                <div class="header-title">Interactive Stopwatch</div>
+                <div class="header-subtitle">Precision Timer with Sound</div>
+            </div>
+        </div>
+        <div class="header-right">
+            <span class="material-icons" id="soundToggle" title="Toggle Sound">volume_up</span>
+            <span class="material-icons" id="themeToggle" title="Toggle Theme">palette</span>
+            <span class="material-icons" id="fullscreenToggle" title="Fullscreen">fullscreen</span>
+        </div>
+    </div>
+
+    <div class="stopwatch-container">
+        <div id="display">00:00.00</div>
+        <div class="status-container">
+            <span class="material-icons">schedule</span>
+            <span id="statusText">Ready to start</span>
+        </div>
+        <div class="controls">
+            <button id="startPauseBtn" class="control-button" title="Start/Stop" style="font-size: 1.2em; font-weight: bold;">START</button>
+            <button id="lapBtn" class="control-button" title="Record Lap" style="font-size: 1.2em; font-weight: bold;">FLAG</button>
+        </div>
+        <div class="lap-list-container" id="lapContainer">
+            <ul id="lapList" class="lap-list"></ul>
+        </div>
+    </div>
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>

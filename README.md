@@ -1,4 +1,4 @@
-SCT_WD_2
+#SCT_WD_2
 
 Interactive Stopwatch This repository contains the code for a modern, interactive stopwatch application built with HTML, CSS, and JavaScript. It offers precision timing, lap recording, sound effects, theme toggling, and fullscreen mode, along with keyboard shortcuts for enhanced usability.
 
